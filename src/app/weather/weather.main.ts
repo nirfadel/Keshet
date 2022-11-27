@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { catchError, flatMap, forkJoin, map, mergeMap, Observable, of, switchMap, tap } from 'rxjs';
+import { forkJoin, map, mergeMap } from 'rxjs';
 import { WeatherService } from './services/weather.service';
 import { City, latlon } from './weather.model';
 
