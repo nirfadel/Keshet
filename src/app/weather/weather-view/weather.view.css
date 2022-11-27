@@ -1,0 +1,11 @@
+.weather-image{
+    width: 15vh;
+    height: 15vh;
+}
+.go-back{
+    cursor: pointer;
+}
+.degree{
+    vertical-align: super;
+    font-size: 14px;
+}

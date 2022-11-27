@@ -1,0 +1,14 @@
+<div class="container">
+    <div><a class="go-back" (click)="goBack()">Go back to search</a></div>
+    <div class="row card-group">
+        <div class="col-3" *ngFor="let w of weather">
+            <div class="card">
+                <img class="card-img-top weather-image"  src="{{w.ImageUrl}}" alt="Card image cap">
+                <div class="card-body">
+                <h3 class="card-title">{{w.Temp}} <sup class="degree">&#8451;</sup></h3>
+                <p class="card-text">{{w.Date | date:"dd/MM/yyy hh:mm:ss"}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

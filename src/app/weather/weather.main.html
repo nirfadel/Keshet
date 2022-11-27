@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <search-comp (newSearchEvent)="searchCities($event)"></search-comp>
+        </div>
+      
+    </div>
+<div class="row card-deck">
+    <div class="col-4" *ngFor="let city of cities">
+        <div class="card">
+            <img class="card-img-top" src="{{city.ImageUrl}}" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title"><a class="link" (click)="showWeather(city.latlon!)">{{city.CityName}}</a></h5>
+            <div>{{city.CurrentTime | date: 'dd/MM/yyy hh:mm:ss'}}</div>
+            </div>
+         </div>
+    </div>
+ </div>
+</div>
+
