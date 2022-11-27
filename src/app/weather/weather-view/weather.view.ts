@@ -20,7 +20,6 @@ export class WeatherViewComponent implements OnInit{
 
   }
   ngOnInit(): void {
-      debugger;
     this.sub = this.route.params.subscribe(params => {
        this._latlan = new latlon();
        this._latlan.latitude = parseFloat(params['lat']);
