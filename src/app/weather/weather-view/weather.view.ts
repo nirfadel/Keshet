@@ -34,6 +34,7 @@ export class WeatherViewComponent implements OnInit{
   }
 
   buildWeatherPage(weatherData: any){
+    this.weather = [];
       for (let i = 0; i < weatherData.length; i++) {
           const data = weatherData[i];
           const w = new Weather();
