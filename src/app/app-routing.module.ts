@@ -4,18 +4,9 @@ import { WeatherViewComponent } from './weather/weather-view/weather.view';
 import { WeatherMainComponent } from './weather/weather.main';
 
 const routes: Routes = [
-  {
-    path: 'view-weather/:lat/:lon',
-    component: WeatherViewComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'view-weather',
-    component: WeatherViewComponent
-  },
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
-  { path: 'main',  component: WeatherMainComponent, pathMatch: 'full' },
-  
+  { path: 'view-weather/:lat/:lon', component: WeatherViewComponent },
+  { path: 'home', component:  WeatherMainComponent},
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 @NgModule({
